@@ -15,6 +15,11 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from pine device
 $(call inherit-product, device/xiaomi/pine/device.mk)
 
+# Lineage Properties
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_USES_AOSP_RECOVERY := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := pine
 PRODUCT_NAME := lineage_pine
@@ -23,6 +28,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7A
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
+EXODUS_MAINTAINER := melles1991
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

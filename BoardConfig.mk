@@ -9,8 +9,11 @@ include device/xiaomi/sdm439-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/pine
 
+# Asserts
+TARGET_OTA_ASSERT_DEVICE := pine
+
 # Kernel
-TARGET_KERNEL_CONFIG := pine-perf_defconfig
+TARGET_KERNEL_CONFIG := olive-perf_defconfig
 
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
